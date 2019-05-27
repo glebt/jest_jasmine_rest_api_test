@@ -6,36 +6,53 @@ jest (test runner), jasmine (matchers), json-server (npm server), request (for m
 
 You need to have NodeJS installed. These commands should work and show current versions:
 
-`node -v`
-`npm -v`
+```
+node -v
+npm -v
+```
 
 Clone the project and run
-`npm install`
+
+```
+npm install
+```
 
 ## Global npm modules
 
 Install these global modules:
 
-`npm install -g json-server`
-`npm install -g jest`
+```
+npm install -g json-server
+npm install -g jest
+```
 
 This is how you can check all top level global modules
 
-`npm list -g --depth=0`
+```
+npm list -g --depth=0
+```
 
 ## Starting server
 
 Start local sever in a separate terminal window:
 
-`json-server --watch jsons/got.json`
+```
+json-server --watch jsons/got.json
+```
 
 ## Running tests
 
 This run all *.spec.js and *.test.js in the current folder and all subfolders
-`jest`
+
+```
+jest
+```
 
 This run only `foo` specs if you have `foo.spec.js` and `bar.spec.js`
-`jest foo`
+
+```
+jest foo
+```
 
 That's the beauty of `jest` - zero config, understands regexp to run only subset of tests
 
@@ -58,3 +75,8 @@ All Starks (characters filtered by house)
 ## What's next
 
 Create your own JSON, start `json-server` and work on your jasmine specs, no jest config changes (at least not immediately).
+
+### Credits
+
+The json with Game of Thrones charactes is taken from here:
+https://github.com/jeffreylancaster/game-of-thrones/blob/master/data/characters.json
